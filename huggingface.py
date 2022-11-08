@@ -9,3 +9,4 @@ text='今天心情不好'
 
 output=model(torch.tensor([tokenizer.encode(text)]))
 print(torch.nn.functional.softmax(output.logits,dim=-1))
+
